@@ -9,8 +9,6 @@ namespace GradeBook.GradeBooks
             Type = GradeBookType.Ranked;
         }
 
-        public static char GetLetterGrade(double averageGrade) : base(averageGrade)
-        {
 
         }
     }
