@@ -14,14 +14,15 @@ namespace GradeBook.GradeBooks
         {
             if (Students.Count < 5)
                 throw new InvalidOperationException("Ranked grade requires at least 5 students");
-            
+            else
+                return 'F';
             
             
             
   
             
             
-            return base.GetLetterGrade(averageGrade);
+            //return base.GetLetterGrade(averageGrade);
         }
 
     }
