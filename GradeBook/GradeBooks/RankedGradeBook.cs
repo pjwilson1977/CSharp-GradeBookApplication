@@ -1,4 +1,5 @@
-﻿using GradeBook.Enums;
+﻿using System;
+using GradeBook.Enums;
 
 namespace GradeBook.GradeBooks
 {
@@ -11,6 +12,15 @@ namespace GradeBook.GradeBooks
 
         public override char GetLetterGrade(double averageGrade)
         {
+            if (Students.Count < 5)
+                throw new InvalidOperationException("Ranked grade requires at least 5 students");
+            
+            
+            
+            
+  
+            
+            
             return base.GetLetterGrade(averageGrade);
         }
 
